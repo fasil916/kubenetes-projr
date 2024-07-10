@@ -16,6 +16,6 @@
 
 FROM openjdk:11.0
 WORKDIR /app
-COPY  webapp/*.war /app
+COPY  target/*.jar /app
 EXPOSE 9090
-CMD ["java","-jar","*.war"]
+CMD ["java","-jar","*.jar"]
